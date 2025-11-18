@@ -12,6 +12,39 @@ app.get('/req', (req, res) => {
     res.send('Yo!')
 })
 
+app.get('/meunome', (req, res) => {
+    res.send('Olá meu nome é Felipe Fracalossi Leite')
+})
+
+
+app.get('/tico', (req, res) => {
+    res.send('teco')
+})
+
+
+app.get('/pokemons', (req, res) => {
+    res.json({
+      msg1: "pikachu",
+      msg2: "caterpie",
+      msg3: "pidgey",
+      msg4: "bulbasaur",
+      msg5: "charander",
+      msg6: "squirtle",
+      msg7: "krabby",
+      msg8: "primeape",
+      msg9: "muk",
+      msg10: "tauros"
+    })
+})
+
+
+app.post('/series', (req, res) => {
+    res.json({
+      msg:`As tres melhores séries são ${s1} ${s2} ${s3}`
+    })
+})
+
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
