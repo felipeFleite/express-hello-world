@@ -39,6 +39,10 @@ app.get('/pokemons', (req, res) => {
 
 
 app.post('/series', (req, res) => {
+  const s1 = req.body.s1
+  const s2 = req.body.s2
+  const s3 = req.body.s3
+
     res.json({
       msg:`As tres melhores séries são ${s1} ${s2} ${s3}`
     })
